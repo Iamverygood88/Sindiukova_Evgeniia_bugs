@@ -94,6 +94,10 @@
 		// change current puzzles, regenerate the pieces
 		piecesBoard.innerHTML = "";
 		createPuzzlePieces(this.dataset.puzzleref);
+		for(var i = 0; i < dropZones.length; i++){
+			dropZones[i].innerHTML = "";
+		}
+
 
 	}
 
